@@ -1,0 +1,33 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Resi</h1></a>
+            </div>
+          </div>
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+              <li role="presentation"><a  routerLink="/feature" routerLinkActive="active">Feature</a></li>
+              <li role="presentation"><a  routerLink="/blog" routerLinkActive="active">Blog</a></li>
+              <li role="presentation"><a  routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+              <li role="presentation"><a  routerLink="/contact" routerLinkActive="active">Contact</a></li>
+
+                     <li *ngIf="checkuser() == false " role="presentation"><a  routerLink="/register" routerLinkActive="active">Register</a></li>
+
+                     <li *ngIf="checkuser() == false " role="presentation"><a  routerLink="/login" routerLinkActive="active">Login </a></li>
+
+
+
+              <li *ngIf="checkuser() == true " role="presentation"><a (click)="logout()" style="cursor:pointer;" routerLinkActive="active">Logout </a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

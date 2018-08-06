@@ -1,0 +1,49 @@
+<div class="feature">
+  <div class="breadcrumbs">
+    <h4>Example on 2 Columns ( use col-md-6)</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" *ngFor="let post of posts.acData">
+
+        <img src="{{post.image}}" class="img-responsive"alt="" />
+        <p>{{post.description}}
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="breadcrumbs">
+    <h4>Example on 4 Columns ( use col-md-3)</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let post of posts.dellData">
+        <img src="{{post.image}}" class="img-responsive"alt="" />
+        <p>{{post.description}}
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    <h4>Example on 3 Columns ( use col-md-4)</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let post of posts.hpData">
+        <img src="{{post.image}}" class="img-responsive"alt="" />
+        <p>{{post.description}}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
